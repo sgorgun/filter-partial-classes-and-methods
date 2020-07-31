@@ -1,16 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace FilterByDigit
 {
-    /// <summary>
-    /// Class that contains filter operations of arrays.
-    /// </summary>
     public static partial class ArrayExtension
     {
-        /// <summary>
-        /// Presents digit.
-        /// </summary>
         public static int Digit
         {
             get => throw new NotImplementedException();
