@@ -6,7 +6,7 @@ namespace FilterByPalindromic
     public static partial class ArrayExtension
     {
         /// <summary>
-        /// Returns new array of elements that satisfy some predicate.
+        /// Creates new array of elements that satisfy some predicate.
         /// </summary>
         /// <param name="source">Source array.</param>
         /// <returns>New array of elements that satisfy some predicate.</returns>
