@@ -21,8 +21,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-    <ItemGroup>
-      <ProjectReference Include="..\FilterByDigit\FilterByDigit.csproj" />
-      <ProjectReference Include="..\FilterByPalindromic\FilterByPalindromic.csproj" />
-    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FilerByDigit\FilterByDigit.csproj" />
+    <ProjectReference Include="..\FilterByPalindromic\FilterByPalindromic.csproj" />
+  </ItemGroup>
 </Project>
