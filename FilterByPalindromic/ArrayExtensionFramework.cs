@@ -17,6 +17,6 @@ namespace FilterByPalindromic
             throw new NotImplementedException();
         }
 
-        static partial void AddAccordingToPredicate(ICollection<int> collection, int item);
+        static partial void Verify(int item, ref bool match);
     }
 }

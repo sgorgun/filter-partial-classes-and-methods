@@ -19,13 +19,7 @@ namespace FilterByDigit
         {
             throw new NotImplementedException();
         }
-
-        /// <summary>
-        /// Forms a collection of integers that match some predicate.
-        /// </summary>
-        /// <remarks>The predicate logic is implemented in another part of the partial class.</remarks>
-        /// <param name="collection">A collection that is formed based on a predicate match.</param>
-        /// <param name="item">An element that, if it contains the digit, is added to the collection.</param>
-        static partial void AddAccordingToPredicate(ICollection<int> collection, int item);
+        
+        static partial void Verify(int item, ref bool match);
     }
 }
