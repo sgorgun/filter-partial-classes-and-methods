@@ -36,7 +36,8 @@ namespace FilterByVariousPredicates.Tests.FilerByDigitTests
         public void FilterByPredicate_ArrayIsNull_ThrowArgumentNullException()
         {
             ArrayExtension.Digit = 0;
-            Assert.Throws<ArgumentNullException>(() => ((int[])null).FilterByPredicate(), "Array cannot be null.");
+            int[]? array = null;
+            Assert.Throws<ArgumentNullException>(() => array?.FilterByPredicate(), "Array cannot be null.");
         }
 
         [Test]

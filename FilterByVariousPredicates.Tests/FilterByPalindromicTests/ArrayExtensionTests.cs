@@ -36,13 +36,13 @@ namespace FilterByVariousPredicates.Tests.FilterByPalindromicTests
             const int sourceLength = 10_000_000;
             const int palindromic = 1_234_554_321;
             int[] source = Enumerable.Repeat(int.MaxValue, sourceLength).ToArray();
-            const int count = 1_000_000,
-                step = sourceLength / count;
+            const int count = 1_000_000, step = sourceLength / count;
+
             for (int i = 0; i < sourceLength; i += step)
             {
                 source[i] = palindromic;
             }
-            
+
             int[] expected = Enumerable.Repeat(palindromic, count).ToArray();
             int[] actual = source.FilterByPredicate();
             CollectionAssert.AreEqual(expected, actual);
