@@ -1,9 +1,7 @@
-﻿using System;
+using System;
 using System.Linq;
 using FilterByDigit;
 using NUnit.Framework;
-
-#pragma warning disable CA1707
 
 namespace FilterByVariousPredicates.Tests.FilerByDigitTests
 {
@@ -36,8 +34,8 @@ namespace FilterByVariousPredicates.Tests.FilerByDigitTests
         public void FilterByPredicate_ArrayIsNull_ThrowArgumentNullException()
         {
             ArrayExtension.Digit = 0;
-            int[]? array = null;
-            Assert.Throws<ArgumentNullException>(() => array?.FilterByPredicate(), "Array cannot be null.");
+            int[] array = null;
+            Assert.Throws<ArgumentNullException>(() => array.FilterByPredicate(), "Array cannot be null.");
         }
 
         [Test]
