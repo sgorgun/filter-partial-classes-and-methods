@@ -19,8 +19,7 @@ namespace FilterByVariousPredicates.Tests.FilterByPalindromicTests
         [TestCase(new[] { 111, 111, 111, 11111111 }, ExpectedResult = new[] { 111, 111, 111, 11111111 })]
         [TestCase(new[] { -1, 0, 111, -11, -1 }, ExpectedResult = new[] { 0, 111 })]
         [TestCase(new[] { 0, 1, 2, 3, 4 }, ExpectedResult = new[] { 0, 1, 2, 3, 4 })]
-        public int[] FilterByPredicateTests(int[] source)
-            => source.FilterByPredicate();
+        public int[] FilterByPredicateTests(int[] source) => source.FilterByPredicate();
 
         [Test]
         public void FilterByPredicate_ArrayIsEmpty_ThrowArgumentException() => Assert.Throws<ArgumentException>(

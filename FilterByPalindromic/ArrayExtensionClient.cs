@@ -1,11 +1,10 @@
 using System;
-using System.Collections.Generic;
 
 namespace FilterByPalindromic
 {
     public static partial class ArrayExtension
     {
-        static partial void Verify(int item, ref bool match)
+        private static partial bool Verify(int item)
         {
             throw new NotImplementedException();
         }
