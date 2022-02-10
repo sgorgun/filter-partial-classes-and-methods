@@ -3,8 +3,6 @@ using System.Linq;
 using FilterByPalindromic;
 using NUnit.Framework;
 
-#pragma warning disable CA1707
-
 namespace FilterByVariousPredicates.Tests.FilterByPalindromicTests
 {
     [TestFixture]
