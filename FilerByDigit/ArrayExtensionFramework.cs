@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace FilterByDigit
 {
@@ -16,7 +16,27 @@ namespace FilterByDigit
         /// <exception cref="ArgumentException">Thrown when array is empty.</exception>
         public static int[] FilterByPredicate(this int[]? source)
         {
-            throw new NotImplementedException();
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
+
+            if (source.Length == 0)
+            {
+                throw new ArgumentException($"{nameof(source)} can't be empty.", nameof(source));
+            }
+
+            List<int> result = new List<int>();
+
+            foreach (int item in source)
+            {
+                if (Verify(item))
+                {
+                    result.Add(item);
+                }
+            }
+
+            return result.ToArray();
         }
 
         private static partial bool Verify(int item);

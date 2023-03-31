@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace FilterByPalindromic
 {
@@ -6,7 +6,21 @@ namespace FilterByPalindromic
     {
         private static partial bool Verify(int item)
         {
-            throw new NotImplementedException();
+            if (item < 0)
+            {
+                return false;
+            }
+
+            int reverse = 0;
+            int temp = item;
+
+            while (temp != 0)
+            {
+                reverse = (reverse * 10) + (temp % 10);
+                temp /= 10;
+            }
+
+            return reverse == item;
         }
     }
 }
